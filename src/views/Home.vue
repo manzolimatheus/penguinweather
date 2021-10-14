@@ -1,18 +1,36 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home" :style="{backgroundImage: `linear-gradient(#00000080, rgba(0, 0, 0, 0.7)),url('${url}')`, backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundSize: 'cover', backgroundPosition: 'center'}">
+    <Weather @change="ChangeBackground" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
+import Weather from '@/components/Weather.vue'
 
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  components:{
+    Weather
+  },
+  data(){
+    return{
+      url: null
+    }
+  },
+  methods:{
+    ChangeBackground(e){
+      this.url = `https://source.unsplash.com/featured/?${e}`
+    }
   }
 }
 </script>
+
+<style>
+.home{
+  width: 100%;
+  height: 100%;
+}
+
+
+</style>

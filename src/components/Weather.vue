@@ -76,7 +76,7 @@
         </h1>
         <img :src="dados.current.condition.icon" alt="Condição do tempo" />
         <br />
-        <progress :value="dados.current.temp_c" max="100">
+        <progress :value="dados.current.temp_c" max="50">
           {{ dados.current.temp_c }}
         </progress>
         <span>{{ dados.current.temp_c }}ºC</span>

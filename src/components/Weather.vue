@@ -27,7 +27,7 @@
               <ion-icon name="location" style="color: tomato"></ion-icon> Local
             </h1>
             <img
-              :src="`https://source.unsplash.com/600x400/?${dados.location.name}`"
+              :src="`https://source.unsplash.com/600x400/?${dados.location.name},${dados.location.country}`"
               alt="Imagem mostrando a cidade"
             />
             <p>

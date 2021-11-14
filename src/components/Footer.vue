@@ -9,6 +9,9 @@
     <a href="https://linkedin.com/in/manzolimatheus">
       <ion-icon name="logo-linkedin"></ion-icon>
     </a>
+    <a href="https://www.instagram.com/rainezinha/">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
   </footer>
 </template>
 

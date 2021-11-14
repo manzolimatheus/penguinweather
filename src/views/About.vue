@@ -2,7 +2,7 @@
   <div class="about">
     <div class="content">
       <br>
-      <h1>Feito por Matheus Manzoli 🐧</h1>
+      <h1>Feito por Matheus Manzoli e Raíne Felix 🐧</h1>
       <iframe src="https://embed.lottiefiles.com/animation/2448"></iframe>
       <h1>Tecnologias</h1>
       <br>
